@@ -9,8 +9,8 @@ const ParentParagraph = styled.p`
 `;
 
 function PhoneCall() {
-  const handlePhoneCall = (e, 신랑또는신부) => {
-    e.preventDefault();
+  const handlePhoneCall = (event, 신랑또는신부) => {
+    event.preventDefault();
     if (신랑또는신부 === "신랑") {
       window.location.href = "tel:" + CSTM.신랑전화번호;
     } else if (신랑또는신부 === "신부") {
@@ -68,7 +68,7 @@ function PhoneCall() {
           >
             · · ·
           </span>
-          <button onClick={handlePhoneCall("신랑")}>
+          <button onClick={(event) => handlePhoneCall(event, "신랑")}>
             <img
               src={`${process.env.PUBLIC_URL}/imgs/전화/call.png`}
               alt="전화"
@@ -123,7 +123,7 @@ function PhoneCall() {
           >
             · · ·
           </span>
-          <button onClick={handlePhoneCall("신부")}>
+          <button onClick={(event) => handlePhoneCall(event, "신부")}>
             <img
               src={`${process.env.PUBLIC_URL}/imgs/전화/call.png`}
               alt="전화"
