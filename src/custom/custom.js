@@ -30,13 +30,17 @@ export const 신부전화번호 = "010-0000-0002";
  * 신랑 가족 관계
  */
 export const 신랑아버지 = "이재영";
+export const 신랑아버지생존여부 = true; // true: 생존, false: 사망
 export const 신랑어머니 = "김영숙";
+export const 신랑어머니생존여부 = true; // true: 생존, false: 사망
 
 /**
  * 신부 가족 관계
  */
 export const 신부아버지 = "김영근";
+export const 신부아버지생존여부 = true; // true: 생존, false: 사망
 export const 신부어머니 = "이영숙";
+export const 신부어머니생존여부 = false; // true: 생존, false: 사망
 
 /**
  * 결혼식

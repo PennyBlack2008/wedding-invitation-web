@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Wrapper from "../common/wrapper";
 
-function MainCover() {
+function SectionType1({ children }) {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
@@ -37,17 +37,13 @@ function MainCover() {
     <section ref={sectionRef}>
       <Wrapper
         className={isVisible ? "visible" : ""}
-        translateY="-50%"
-        transition={{ opacity: 1, transform: 1 }}
+        translateY="20px"
+        transition={{ opacity: 0.5, transform: 0.5 }}
       >
-        <img
-          src={`${process.env.PUBLIC_URL}/imgs/01/main-cover.png`}
-          alt="메인 커버"
-          style={{ width: "100%" }}
-        />
+        {children}
       </Wrapper>
     </section>
   );
 }
 
-export default MainCover;
+export default SectionType1;
