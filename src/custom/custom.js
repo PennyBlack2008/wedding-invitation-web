@@ -117,3 +117,8 @@ export const KAKAO_SHARE_CONFIG = {
     webUrl: "https://pennyblack2008.github.io/wedding-invitation-web",
   },
 };
+
+/**
+ * 꼭 잊지말고 사진 넣기!!
+ * publc/imgs/01 부터 끝까지 넣어주세용
+ */
