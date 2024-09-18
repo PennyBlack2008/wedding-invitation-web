@@ -3,7 +3,7 @@ export function loadScript(url) {
   script.src = url;
   script.type = "text/javascript";
   script.async = true;
-  document.body.appendChild(script);
+  document.head.appendChild(script);
 }
 
 export function asyncLoadScript(url) {

@@ -2,6 +2,7 @@ import SectionType1 from "../common/sectionType1";
 import styled from "styled-components";
 import * as CSTM from "../../custom/custom";
 import { useState } from "react";
+import { gallerySwiperStore } from "../../store/gallerySwiperStore";
 
 const GalleryWrapper = styled.div`
   background-color: #f5f5f6;
@@ -33,6 +34,7 @@ const ShowMoreButton = styled.button`
 
 function Gallery() {
   const [isShowMore, setIsShowMore] = useState(false);
+  const { openGallerySwiper } = gallerySwiperStore();
 
   const initialImageList = CSTM.갤러리사진리스트.filter(
     (img, index) => index < 6
@@ -45,6 +47,11 @@ function Gallery() {
   const handleShowMoreCtrl = (e) => {
     e.preventDefault();
     setIsShowMore(!isShowMore);
+  };
+
+  const handleClickImage = (e, index) => {
+    e.preventDefault();
+    openGallerySwiper(index);
   };
 
   return (
@@ -80,6 +87,7 @@ function Gallery() {
               src={img.src}
               alt={`갤러리 이미지 ${index}`}
               style={{ width: "100%" }}
+              onClick={(e) => handleClickImage(e, index)}
             ></img>
           ))}
           {isShowMore &&
@@ -89,6 +97,7 @@ function Gallery() {
                 src={img.src}
                 alt={`갤러리 이미지 ${index}`}
                 style={{ width: "100%" }}
+                onClick={(e) => handleClickImage(e, index + 6)}
               ></img>
             ))}
         </GalleryImagesWrapper>

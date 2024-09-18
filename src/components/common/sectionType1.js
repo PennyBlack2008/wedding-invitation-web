@@ -42,8 +42,8 @@ function SectionType1({ children }) {
     <PaddingSection ref={sectionRef}>
       <Wrapper
         className={isVisible ? "visible" : ""}
-        translateY="20px"
-        transition={{ opacity: 0.5, transform: 0.5 }}
+        $translateY="20px"
+        $transition={{ opacity: 0.5, transform: 0.5 }}
       >
         {children}
       </Wrapper>

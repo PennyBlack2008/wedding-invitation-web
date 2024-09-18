@@ -37,8 +37,8 @@ function MainCover() {
     <section ref={sectionRef}>
       <Wrapper
         className={isVisible ? "visible" : ""}
-        translateY="-50%"
-        transition={{ opacity: 1, transform: 1 }}
+        $translateY="-50%"
+        $transition={{ opacity: 1, transform: 1 }}
       >
         <img
           src={`${process.env.PUBLIC_URL}/imgs/01/main-cover.png`}
