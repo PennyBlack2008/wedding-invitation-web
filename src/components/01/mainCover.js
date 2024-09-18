@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 
-const Section = styled.section`
+const Wrapper = styled.div`
   opacity: 0;
   transform: translateY(-50%);
   transition: opacity 1s ease, transform 1s ease;
@@ -21,6 +21,8 @@ function MainCover() {
         // 뷰포트에 요소가 보이면 isVisible을 true로 설정
         if (entry.isIntersecting) {
           setIsVisible(true);
+        } else {
+          setIsVisible(false);
         }
       },
       {
@@ -41,12 +43,15 @@ function MainCover() {
   }, []);
 
   return (
-    <Section ref={sectionRef} className={isVisible ? "visible" : ""}>
-      <img
-        src={`${process.env.PUBLIC_URL}/imgs/01/main-cover.png`}
-        alt="메인 커버"
-      />
-    </Section>
+    <section ref={sectionRef}>
+      <Wrapper className={isVisible ? "visible" : ""}>
+        <img
+          src={`${process.env.PUBLIC_URL}/imgs/01/main-cover.png`}
+          alt="메인 커버"
+          style={{ width: "100%" }}
+        />
+      </Wrapper>
+    </section>
   );
 }
 

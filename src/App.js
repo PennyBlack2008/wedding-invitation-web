@@ -3,6 +3,8 @@ import "./App.css";
 import * as CSTM from "./custom/custom";
 import { Helmet } from "react-helmet";
 import { loadScript, asyncLoadScript } from "./utils/scriptLoader";
+import MainCover from "./components/01/mainCover";
+import MainSummary from "./components/02/mainSummary";
 
 function App() {
   useEffect(() => {
@@ -35,6 +37,7 @@ function App() {
       </Helmet>
       <div>
         <MainCover></MainCover>
+        <MainSummary></MainSummary>
       </div>
     </>
   );
