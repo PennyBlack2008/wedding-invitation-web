@@ -124,5 +124,23 @@ export const KAKAO_SHARE_CONFIG = {
 
 /**
  * 꼭 잊지말고 사진 넣기!!
- * publc/imgs/01 부터 끝까지 넣어주세용
+ * public/imgs/01 부터 끝까지 넣어주세용
  */
+export const 갤러리사진리스트 = [
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/01.png` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/02.png` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/03.png` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/04.png` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/05.png` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/06.png` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/07.png` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/08.png` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/09.png` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/10.png` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/11.png` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/12.png` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/13.png` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/14.png` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/15.png` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/16.png` },
+];

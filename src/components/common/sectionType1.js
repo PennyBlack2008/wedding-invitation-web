@@ -1,5 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import Wrapper from "../common/wrapper";
+import styled from "styled-components";
+
+const PaddingSection = styled.section`
+  padding: 40px 0;
+`;
 
 function SectionType1({ children }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -34,7 +39,7 @@ function SectionType1({ children }) {
   }, []);
 
   return (
-    <section ref={sectionRef}>
+    <PaddingSection ref={sectionRef}>
       <Wrapper
         className={isVisible ? "visible" : ""}
         translateY="20px"
@@ -42,7 +47,7 @@ function SectionType1({ children }) {
       >
         {children}
       </Wrapper>
-    </section>
+    </PaddingSection>
   );
 }
 

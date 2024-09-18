@@ -6,6 +6,7 @@ import { loadScript, asyncLoadScript } from "./utils/scriptLoader";
 import MainCover from "./components/01/mainCover";
 import MainSummary from "./components/02/mainSummary";
 import PhoneCall from "./components/03/phoneCall";
+import Gallery from "./components/04/gallery";
 
 function App() {
   useEffect(() => {
@@ -40,6 +41,7 @@ function App() {
         <MainCover></MainCover>
         <MainSummary></MainSummary>
         <PhoneCall></PhoneCall>
+        <Gallery></Gallery>
       </div>
     </>
   );
