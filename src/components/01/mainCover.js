@@ -1,15 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import styled from "styled-components";
-
-const Wrapper = styled.div`
-  opacity: 0;
-  transform: translateY(-50%);
-  transition: opacity 1s ease, transform 1s ease;
-  &.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`;
+import Wrapper from "../common/wrapper";
 
 function MainCover() {
   const [isVisible, setIsVisible] = useState(false);
@@ -44,7 +34,11 @@ function MainCover() {
 
   return (
     <section ref={sectionRef}>
-      <Wrapper className={isVisible ? "visible" : ""}>
+      <Wrapper
+        className={isVisible ? "visible" : ""}
+        translateY="-50%"
+        transition={{ opacity: 1, transform: 1 }}
+      >
         <img
           src={`${process.env.PUBLIC_URL}/imgs/01/main-cover.png`}
           alt="메인 커버"

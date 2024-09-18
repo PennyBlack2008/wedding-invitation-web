@@ -1,15 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import styled from "styled-components";
-
-const Wrapper = styled.section`
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-  &.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`;
+import Wrapper from "../common/wrapper";
 
 function MainSummary() {
   const [isVisible, setIsVisible] = useState(false);
@@ -44,7 +34,11 @@ function MainSummary() {
 
   return (
     <section ref={sectionRef}>
-      <Wrapper className={isVisible ? "visible" : ""}>
+      <Wrapper
+        className={isVisible ? "visible" : ""}
+        translateY="20px"
+        transition={{ opacity: 0.5, transform: 0.5 }}
+      >
         <img
           src={`${process.env.PUBLIC_URL}/imgs/02/main-summary.png`}
           alt="메인 커버"
