@@ -46,7 +46,7 @@ export const 신부어머니생존여부 = false; // true: 생존, false: 사망
  * 결혼식
  */
 // 날짜
-export const 결혼식날짜 = moment("2025-06-10 12:00", "YYYY-MM-DD HH:mm");
+export const 결혼식날짜 = moment("2024-11-16 15:00", "YYYY-MM-DD HH:mm");
 // 장소
 export const 결혼식장소 = "충남 천안시 서북구 천안대로 1198-30";
 export const 결혼식장소더자세히 = "비렌티웨딩홀 신관 3층 루체오홀";
