@@ -1,3 +1,11 @@
+/* 기본적으로 모든 요소의 마진과 패딩을 제거 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* box-sizing을 border-box로 설정 */
+}
+
 body {
   margin: 0 auto;
   font-family: "GowunBatang", serif;
@@ -15,6 +23,7 @@ input[type="reset"] {
   cursor: pointer;
   outline: inherit;
 }
+
 
 .swiper {
   width: 100%;

@@ -9,6 +9,7 @@ import PhoneCall from "./components/03/phoneCall";
 import Gallery from "./components/04/gallery";
 import Calendar from "./components/05/calendar";
 import Timer from "./components/06/timer";
+import Location from "./components/07/location";
 import GallerySwiper from "./components/modal/gallerySwiper";
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
         <Gallery></Gallery>
         <Calendar></Calendar>
         <Timer></Timer>
+        <Location></Location>
       </div>
       <GallerySwiper></GallerySwiper>
     </>
