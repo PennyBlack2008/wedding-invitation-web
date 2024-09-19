@@ -7,6 +7,7 @@ import MainCover from "./components/01/mainCover";
 import MainSummary from "./components/02/mainSummary";
 import PhoneCall from "./components/03/phoneCall";
 import Gallery from "./components/04/gallery";
+import Calendar from "./components/05/calendar";
 import GallerySwiper from "./components/modal/gallerySwiper";
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
         <MainSummary></MainSummary>
         <PhoneCall></PhoneCall>
         <Gallery></Gallery>
+        <Calendar></Calendar>
       </div>
       <GallerySwiper></GallerySwiper>
     </>
