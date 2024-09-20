@@ -50,9 +50,9 @@ function Location() {
             lineHeight: "1.5rem",
           }}
         >
-          <p>충남 천안시 서북구 천안대로 1198-30</p>
+          <p>{CSTM.결혼식장소}</p>
           <p style={{ fontWeight: 600, color: "#000000" }}>
-            비렌티웨딩홀 신관 3층 루체오홀
+            {CSTM.결혼식장소더자세히}
           </p>
         </div>
         <div
