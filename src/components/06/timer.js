@@ -13,6 +13,9 @@ const Table = styled.table`
   text-align: center;
   width: 65%;
   font-size: 1rem;
+  th {
+    font-weight: normal;
+  }
   tr {
     height: 30px;
   }
@@ -60,30 +63,34 @@ function Timer() {
     <SectionType1>
       <TableWrapper>
         <Table>
-          <tr>
-            <th>DAY</th>
-            <th></th>
-            <th>HOUR</th>
-            <th></th>
-            <th>MIN</th>
-            <th></th>
-            <th>SEC</th>
-          </tr>
-          <tr>
-            <td id="daysLeft" style={{ color: "#0D70A7", fontWeight: 600 }}>
-              {timeLeft.days}
-            </td>
-            <td>:</td>
-            <td id="hoursLeft">{String(timeLeft.hours).padStart(2, "0")}</td>
-            <td>:</td>
-            <td id="minutesLeft">
-              {String(timeLeft.minutes).padStart(2, "0")}
-            </td>
-            <td>:</td>
-            <td id="secondsLeft">
-              {String(timeLeft.seconds).padStart(2, "0")}
-            </td>
-          </tr>
+          <thead>
+            <tr>
+              <th>DAY</th>
+              <th></th>
+              <th>HOUR</th>
+              <th></th>
+              <th>MIN</th>
+              <th></th>
+              <th>SEC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="daysLeft" style={{ color: "#0D70A7", fontWeight: 600 }}>
+                {timeLeft.days}
+              </td>
+              <td>:</td>
+              <td id="hoursLeft">{String(timeLeft.hours).padStart(2, "0")}</td>
+              <td>:</td>
+              <td id="minutesLeft">
+                {String(timeLeft.minutes).padStart(2, "0")}
+              </td>
+              <td>:</td>
+              <td id="secondsLeft">
+                {String(timeLeft.seconds).padStart(2, "0")}
+              </td>
+            </tr>
+          </tbody>
         </Table>
       </TableWrapper>
       <TimeLeftParagraph>
