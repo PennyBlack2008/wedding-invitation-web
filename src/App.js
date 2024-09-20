@@ -11,6 +11,7 @@ import Calendar from "./components/05/calendar";
 import Timer from "./components/06/timer";
 import Location from "./components/07/location";
 import GallerySwiper from "./components/modal/gallerySwiper";
+import Map from "./components/08/map";
 
 function App() {
   useEffect(() => {
@@ -49,6 +50,7 @@ function App() {
         <Calendar></Calendar>
         <Timer></Timer>
         <Location></Location>
+        <Map></Map>
       </div>
       <GallerySwiper></GallerySwiper>
     </>

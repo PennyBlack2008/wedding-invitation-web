@@ -1,16 +1,29 @@
-import SectionType1 from "../common/sectionType1";
+import SectionType2 from "../common/sectionType2";
 import styled from "styled-components";
+import * as CSTM from "../../custom/custom";
 
 const BackgroundDiv = styled.div`
   background-color: #f5f5f6;
-  height: 256px;
   text-align: center;
   padding: 50px 0 50px 0;
 `;
 
+const WeddingHallCallButton = styled.button`
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  width: 165px;
+  height: 30px;
+  font-size: 13px;
+  border-radius: 15px;
+`;
+
+const weddingHallPhoneNumber = CSTM.결혼식장전화.split("-").join(" - ");
+
 function Location() {
   return (
-    <SectionType1>
+    <SectionType2>
       <BackgroundDiv>
         <span
           style={{
@@ -42,8 +55,25 @@ function Location() {
             비렌티웨딩홀 신관 3층 루체오홀
           </p>
         </div>
+        <div
+          style={{
+            paddingTop: "20px",
+            display: "flex",
+            justifyContent: "center",
+            color: "#545454",
+          }}
+        >
+          <WeddingHallCallButton>
+            <img
+              src={process.env.PUBLIC_URL + "/imgs/전화/call.png"}
+              style={{ width: "10px", height: "10px", marginRight: "10px" }}
+              alt="전화"
+            />
+            {weddingHallPhoneNumber}
+          </WeddingHallCallButton>
+        </div>
       </BackgroundDiv>
-    </SectionType1>
+    </SectionType2>
   );
 }
 

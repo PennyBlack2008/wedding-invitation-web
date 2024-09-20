@@ -62,6 +62,7 @@ export const 마커위치 = {
   lat: 36.84784786358723,
   lng: 127.15908677087823,
 };
+export const 결혼식장맵링크 = "https://kko.to/GyOW40h3cO";
 
 /**
  * 계좌
