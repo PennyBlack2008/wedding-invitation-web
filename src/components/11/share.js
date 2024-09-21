@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import SectionType2 from "../common/sectionType2";
 import * as CSTM from "../../custom/custom";
+import { checkMobile } from "../../utils/mobile";
 
 const Kakao = window.Kakao;
 
@@ -51,8 +52,16 @@ function Share() {
 
   const handleShareByMessage = () => {
     const message = "모바일 청첩장을 확인해주세요! " + window.location.href;
-    const link = "sms:?body=" + encodeURIComponent(message);
-    window.open(link, "_system");
+    if (checkMobile() === "android") {
+      const link = "sms:?body=" + encodeURIComponent(message);
+      window.location.href = link;
+    } else if (checkMobile() === "ios") {
+      const link = "sms:&body=" + encodeURIComponent(message);
+      window.location.href = link;
+    } else {
+      const link = "sms:?body=" + encodeURIComponent(message);
+      window.location.href = link;
+    }
   };
 
   return (
@@ -66,7 +75,7 @@ function Share() {
           />
           &nbsp;카카오톡
         </Button>
-        <Button onCLick={() => handleShareByMessage()}>
+        <Button onClick={() => handleShareByMessage()}>
           <img
             src={`${process.env.PUBLIC_URL}/imgs/smile/smile.png`}
             alt="2G-Phone"
