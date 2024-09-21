@@ -13,6 +13,9 @@ import Location from "./components/07/location";
 import GallerySwiper from "./components/modal/gallerySwiper";
 import Map from "./components/08/map";
 import LocationNotice from "./components/09/locationNotice";
+import BankAccount from "./components/10/bankAccount";
+import Share from "./components/11/share";
+import Footer from "./components/footer/footer";
 
 function App() {
   useEffect(() => {
@@ -53,6 +56,9 @@ function App() {
         <Location></Location>
         <Map></Map>
         <LocationNotice></LocationNotice>
+        <BankAccount></BankAccount>
+        <Share></Share>
+        <Footer></Footer>
       </div>
       <GallerySwiper></GallerySwiper>
     </>
