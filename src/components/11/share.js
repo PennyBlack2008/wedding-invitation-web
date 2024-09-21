@@ -49,14 +49,16 @@ function Share() {
     });
   };
 
+  const handleShareByMessage = () => {
+    const message = "모바일 청첩장을 확인해주세요! " + window.location.href;
+    const link = "sms:?body=" + encodeURIComponent(message);
+    window.location.href = link;
+  };
+
   return (
     <SectionType2>
       <ButtonGroupWrapper>
-        <Button
-          onClick={() => {
-            handleShareByKakao();
-          }}
-        >
+        <Button onClick={() => handleShareByKakao()}>
           <img
             src={`${process.env.PUBLIC_URL}/imgs/kakao/logo.png`}
             alt="kakao-logo"
@@ -64,7 +66,7 @@ function Share() {
           />
           &nbsp;카카오톡
         </Button>
-        <Button>
+        <Button onCLick={() => handleShareByMessage()}>
           <img
             src={`${process.env.PUBLIC_URL}/imgs/smile/smile.png`}
             alt="2G-Phone"
