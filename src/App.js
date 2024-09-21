@@ -19,13 +19,11 @@ import Footer from "./components/footer/footer";
 
 function App() {
   useEffect(() => {
-    asyncLoadScript(`${process.env.PUBLIC_URL}/scripts/jquery.js`).then(() => {
-      if (CSTM.꽃잎효과ONOFF) {
-        setTimeout(() => {
-          loadScript(`${process.env.PUBLIC_URL}/scripts/snowfall.js`);
-        }, 1000);
-      }
-    });
+    if (CSTM.꽃잎효과ONOFF) {
+      setTimeout(() => {
+        loadScript(`${process.env.PUBLIC_URL}/scripts/snowfall.js`);
+      }, 1000);
+    }
   }, []);
 
   return (

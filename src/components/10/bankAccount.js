@@ -111,7 +111,7 @@ function BankAccount() {
               {CSTM.신랑계좌번호.은행} {CSTM.신랑계좌번호.계좌번호}
             </li>
             {CSTM.신랑혼주계좌번호리스트.map((계좌, index) => (
-              <li>
+              <li key={index}>
                 <strong>혼주 {계좌.이름} : </strong>
                 {계좌.은행} {계좌.계좌번호}
               </li>
@@ -132,7 +132,7 @@ function BankAccount() {
               {CSTM.신부계좌번호.은행} {CSTM.신부계좌번호.계좌번호}
             </li>
             {CSTM.신부혼주계좌번호리스트.map((계좌, index) => (
-              <li>
+              <li key={index}>
                 <strong>혼주 {계좌.이름} : </strong>
                 {계좌.은행} {계좌.계좌번호}
               </li>

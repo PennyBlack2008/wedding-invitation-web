@@ -6,7 +6,7 @@ import moment from "moment";
  * 에 폴더이름을 넣어주세요.
  */
 // folder 이름
-export const 폴더이름 = "wedding-invitation-web";
+export const 폴더이름 = "mo18";
 export const WEDDING_HOMEPAGE = `https://${폴더이름}.luvle.co.kr`;
 
 // 카톡 링크 공유했을 때 나오는 대표이미지
@@ -14,7 +14,7 @@ export const OG_IMAGE_URL =
   "https://image.cine21.com/resize/cine21/still/2005/1121/M0020066_focus52804[W578-].jpg";
 
 // 꽃잎 효과
-export const 꽃잎효과ONOFF = false; // 꽃잎효과를 키고 싶다면 true, 끄고 싶다면 false로 변경
+export const 꽃잎효과ONOFF = true; // 꽃잎효과를 키고 싶다면 true, 끄고 싶다면 false로 변경
 
 /**
  * 신랑 신부

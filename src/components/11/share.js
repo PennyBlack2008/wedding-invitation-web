@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import SectionType2 from "../common/sectionType2";
+import * as CSTM from "../../custom/custom";
+
+const Kakao = window.Kakao;
 
 const ButtonGroupWrapper = styled.div`
   display: flex;
@@ -13,13 +16,47 @@ const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 15px;
+  color: #777777;
 `;
 
 function Share() {
+  const handleShareByKakao = () => {
+    Kakao.Share.sendDefault({
+      objectType: "feed",
+      content: {
+        title: CSTM.KAKAO_SHARE_CONFIG.title,
+        description: CSTM.KAKAO_SHARE_CONFIG.description,
+        imageUrl: CSTM.KAKAO_SHARE_CONFIG.imageUrl,
+        imageWidth: CSTM.KAKAO_SHARE_CONFIG.imageWidth,
+        imageHeight: CSTM.KAKAO_SHARE_CONFIG.imageHeight,
+        link: {
+          mobileWebUrl: CSTM.KAKAO_SHARE_CONFIG.link.mobileWebUrl,
+          webUrl: CSTM.KAKAO_SHARE_CONFIG.link.webUrl,
+        },
+      },
+      buttons: [
+        {
+          title: "자세히 보기",
+          link: {
+            mobileWebUrl: CSTM.WEDDING_HOMEPAGE,
+            webUrl: CSTM.WEDDING_HOMEPAGE,
+          },
+        },
+      ],
+      // 카카오톡 미설치 시 카카오톡 설치 경로이동
+      installTalk: true,
+    });
+  };
+
   return (
     <SectionType2>
       <ButtonGroupWrapper>
-        <Button>
+        <Button
+          onClick={() => {
+            handleShareByKakao();
+          }}
+        >
           <img
             src={`${process.env.PUBLIC_URL}/imgs/kakao/logo.png`}
             alt="kakao-logo"

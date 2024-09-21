@@ -8,7 +8,13 @@ const PaddingWrapper = styled.div`
 function Footer() {
   return (
     <SectionType2>
-      <PaddingWrapper>
+      <PaddingWrapper
+        onClick={() =>
+          window.open(
+            "https://www.instagram.com/luvle_studio?igsh=dG4zNzNkZzg4anll"
+          )
+        }
+      >
         <img
           src={`${process.env.PUBLIC_URL}/imgs/footer/footer.png`}
           alt="footer"
