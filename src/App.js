@@ -16,6 +16,7 @@ import LocationNotice from "./components/09/locationNotice";
 import BankAccount from "./components/10/bankAccount";
 import Share from "./components/11/share";
 import Footer from "./components/footer/footer";
+import PlayMusic from "./components/playMusic/playMusic";
 
 function App() {
   useEffect(() => {
@@ -37,6 +38,7 @@ function App() {
           property="og:title"
           content={`${CSTM.신랑이름} ♥ ${CSTM.신부이름}의 결혼식에 초대합니다.`}
         />
+        <meta property="og:type" content="website"></meta>
         <meta property="og:description" content="결혼식에 초대합니다♡" />
         <meta property="og:image" content={CSTM.OG_IMAGE_URL} />
         <meta
@@ -57,6 +59,7 @@ function App() {
         <BankAccount></BankAccount>
         <Share></Share>
         <Footer></Footer>
+        <PlayMusic></PlayMusic>
       </div>
       <GallerySwiper></GallerySwiper>
     </>
