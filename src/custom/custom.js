@@ -1,10 +1,5 @@
 import moment from "moment";
 
-/**
- * 폴더 이름
- * 꼭 package.json에 "homepage": "https://pennyblack2008.github.io/여기에폴더이름으로바꿔주세요",
- * 에 폴더이름을 넣어주세요.
- */
 // folder 이름
 export const 폴더이름 = "mo18";
 export const WEDDING_HOMEPAGE = `https://${폴더이름}.luvle.co.kr`;

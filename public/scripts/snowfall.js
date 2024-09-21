@@ -441,7 +441,7 @@ $(document).ready(function () {
     minSpeed: 1, // 눈의 최소속도를 수치로 입력
     maxSpeed: 1, // 최대속도를 수치로 입력
     flakeColor: "#FF9B8D", // 눈의 색을 칼라코드로 입력
-    image: `/imgs/snowfall/flower.png`, // 이미지
+    image: `${window.location.pathname}imgs/snowfall/flower.png`, // 이미지
     round: true, // 눈이 둥글면 true, 아니면 false
     shadow: false, // 눈의 그림자가 있으면, 없으면 false
   });
