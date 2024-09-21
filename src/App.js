@@ -12,6 +12,7 @@ import Timer from "./components/06/timer";
 import Location from "./components/07/location";
 import GallerySwiper from "./components/modal/gallerySwiper";
 import Map from "./components/08/map";
+import LocationNotice from "./components/09/locationNotice";
 
 function App() {
   useEffect(() => {
@@ -51,6 +52,7 @@ function App() {
         <Timer></Timer>
         <Location></Location>
         <Map></Map>
+        <LocationNotice></LocationNotice>
       </div>
       <GallerySwiper></GallerySwiper>
     </>
