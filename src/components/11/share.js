@@ -52,7 +52,7 @@ function Share() {
   const handleShareByMessage = () => {
     const message = "모바일 청첩장을 확인해주세요! " + window.location.href;
     const link = "sms:?body=" + encodeURIComponent(message);
-    window.location.href = link;
+    window.open(link, "_system");
   };
 
   return (
