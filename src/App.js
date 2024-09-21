@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import "./App.css";
 import * as CSTM from "./custom/custom";
 import { Helmet } from "react-helmet";
-import { loadScript, asyncLoadScript } from "./utils/scriptLoader";
+import { loadScript } from "./utils/scriptLoader";
 import MainCover from "./components/01/mainCover";
 import MainSummary from "./components/02/mainSummary";
 import PhoneCall from "./components/03/phoneCall";
