@@ -1,11 +1,12 @@
 import SectionType1 from "../common/sectionType1";
 import styled from "styled-components";
 import * as CSTM from "../../custom/custom";
+import { 갤러리색깔 as COLOR } from "../../custom/color";
 import { useState } from "react";
 import { gallerySwiperStore } from "../../store/gallerySwiperStore";
 
 const GalleryWrapper = styled.div`
-  background-color: #f5f5f6;
+  background-color: ${COLOR.배경_색깔};
   text-align: center;
   padding: 80px 0 50px 0;
 `;
@@ -14,7 +15,7 @@ const GalleryImagesWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-gap: 5px;
-  background-color: #f5f5f6;
+  background-color: ${COLOR.배경_색깔};
   max-width: 1000px;
   margin: 0 auto;
   overflow: hidden;
@@ -59,7 +60,7 @@ function Gallery() {
       <GalleryWrapper>
         <span
           style={{
-            color: "#BDBDBD",
+            color: COLOR.GALLERY_색깔,
             fontSize: "10px",
             minWidth: "3rem",
             display: "inline-block",
@@ -70,7 +71,7 @@ function Gallery() {
         <br />
         <span
           style={{
-            color: "#595959",
+            color: COLOR.우리의순간_색깔,
             fontSize: "20px",
             minWidth: "3rem",
             display: "inline-block",

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import * as CSTM from "../../custom/custom";
 import moment from "moment";
 import { useEffect, useState, useCallback } from "react";
+import { 타이머색깔 as COLOR } from "../../custom/color";
 
 const TableWrapper = styled.div`
   display: flex;
@@ -76,7 +77,13 @@ function Timer() {
           </thead>
           <tbody>
             <tr>
-              <td id="daysLeft" style={{ color: "#0D70A7", fontWeight: 600 }}>
+              <td
+                id="daysLeft"
+                style={{
+                  color: COLOR.DAY_숫자_색깔,
+                  fontWeight: 600,
+                }}
+              >
                 {timeLeft.days}
               </td>
               <td>:</td>
@@ -95,7 +102,7 @@ function Timer() {
       </TableWrapper>
       <TimeLeftParagraph>
         결혼까지 남은 시간.&nbsp;
-        <span style={{ color: "#0D70A7", fontWeight: 600 }}>
+        <span style={{ color: COLOR.DAY_숫자_색깔, fontWeight: 600 }}>
           {timeLeft.days}
         </span>
         일

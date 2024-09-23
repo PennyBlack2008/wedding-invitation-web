@@ -2,14 +2,15 @@ import SectionType2 from "../common/sectionType2";
 import styled from "styled-components";
 import * as CSTM from "../../custom/custom";
 import { useEffect } from "react";
+import { 지도색깔 as COLOR } from "../../custom/color";
 
 const kakao = window.kakao;
 
 const KakaoMapButton = styled.button`
-  color: #ffffff;
+  color: ${COLOR.카카오맵으로보기_색깔};
   font-size: 13px;
   text-align: center;
-  background-color: #7a7a7a;
+  background-color: ${COLOR.배경_색깔};
   margin: 0 auto;
   height: 40px;
   width: 100%;

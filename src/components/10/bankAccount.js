@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import SectionType2 from "../common/sectionType2";
 import styled from "styled-components";
 import * as CSTM from "../../custom/custom";
+import { 은행계좌색깔 as COLOR } from "../../custom/color";
 
 const Header = styled.p`
   text-align: center;
@@ -12,7 +13,7 @@ const Header = styled.p`
 `;
 
 const AccordionButton = styled.button`
-  background-color: #f5f5f6;
+  background-color: ${COLOR.계좌번호버튼_색깔};
   color: black;
   cursor: pointer;
   padding: 0.8rem;

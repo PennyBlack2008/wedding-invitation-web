@@ -1,9 +1,10 @@
 import SectionType2 from "../common/sectionType2";
 import styled from "styled-components";
 import * as CSTM from "../../custom/custom";
+import { 오시는길색깔 as COLOR } from "../../custom/color";
 
 const BackgroundDiv = styled.div`
-  background-color: #f5f5f6;
+  background-color: ${COLOR.배경_색깔};
   text-align: center;
   padding: 50px 0 50px 0;
 `;
@@ -27,7 +28,7 @@ function Location() {
       <BackgroundDiv>
         <span
           style={{
-            color: "#AAAAAA",
+            color: COLOR.LOCATION_색깔,
             fontSize: "9px",
             textAlign: "center",
           }}
