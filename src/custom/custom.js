@@ -9,7 +9,7 @@ export const OG_IMAGE_URL =
   "https://image.cine21.com/resize/cine21/still/2005/1121/M0020066_focus52804[W578-].jpg";
 
 // 꽃잎 효과
-export const 꽃잎효과ONOFF = false; // 꽃잎효과를 키고 싶다면 true, 끄고 싶다면 false로 변경
+export const 꽃잎효과ONOFF = true; // 꽃잎효과를 키고 싶다면 true, 끄고 싶다면 false로 변경
 
 /**
  * 신랑 신부
@@ -122,22 +122,25 @@ export const KAKAO_SHARE_CONFIG = {
 /**
  * 꼭 잊지말고 사진 넣기!!
  * public/imgs/01 부터 끝까지 넣어주세용
+ * jpg인지 png인지도 확인하고 만약 png이면 파일이름 뒤에 png로 바꿔주세용!!
+ * 그리고 사진 크기가
+ * 702 X 926 사이즈 비슷하게 맞춰주면 잘나와용
  */
 export const 갤러리사진리스트 = [
-  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/01.png` },
-  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/02.png` },
-  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/03.png` },
-  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/04.png` },
-  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/05.png` },
-  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/06.png` },
-  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/07.png` },
-  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/08.png` },
-  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/09.png` },
-  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/10.png` },
-  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/11.png` },
-  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/12.png` },
-  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/13.png` },
-  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/14.png` },
-  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/15.png` },
-  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/16.png` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/01.jpg` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/02.jpg` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/03.jpg` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/04.jpg` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/05.jpg` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/06.jpg` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/07.jpg` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/08.jpg` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/09.jpg` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/10.jpg` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/11.jpg` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/12.jpg` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/13.jpg` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/14.jpg` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/15.jpg` },
+  { src: `${process.env.PUBLIC_URL}/imgs/갤러리사진리스트/16.jpg` },
 ];

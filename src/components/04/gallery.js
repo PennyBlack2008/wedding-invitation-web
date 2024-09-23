@@ -20,6 +20,8 @@ const GalleryImagesWrapper = styled.div`
   margin: 0 auto;
   overflow: hidden;
   padding: 20px 30px 20px 30px;
+  align-items: center;
+  justify-content: center;
 `;
 
 const ShowMoreButton = styled.button`
@@ -87,7 +89,7 @@ function Gallery() {
               key={index}
               src={img.src}
               alt={`갤러리 이미지 ${index}`}
-              style={{ width: "100%" }}
+              style={{ width: "100%", objectFit: "cover" }}
               onClick={(e) => handleClickImage(e, index)}
             ></img>
           ))}
@@ -97,7 +99,7 @@ function Gallery() {
                 key={index}
                 src={img.src}
                 alt={`갤러리 이미지 ${index}`}
-                style={{ width: "100%" }}
+                style={{ width: "100%", objectFit: "cover" }}
                 onClick={(e) => handleClickImage(e, index + 6)}
               ></img>
             ))}

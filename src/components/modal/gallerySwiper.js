@@ -65,6 +65,9 @@ function GallerySwiper() {
                 style={{
                   height: "auto",
                   backgroundColor: "rgba(0, 0, 0, 0.7)",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
                 }}
               >
                 <img
