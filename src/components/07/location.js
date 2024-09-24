@@ -23,6 +23,9 @@ const WeddingHallCallButton = styled.button`
 const weddingHallPhoneNumber = CSTM.결혼식장전화.split("-").join(" - ");
 
 function Location() {
+  const callWeddingHall = (e) => {
+    window.location.href = "tel:" + CSTM.결혼식장전화;
+  };
   return (
     <SectionType2>
       <BackgroundDiv>
@@ -64,7 +67,7 @@ function Location() {
             color: "#545454",
           }}
         >
-          <WeddingHallCallButton>
+          <WeddingHallCallButton onClick={(e) => callWeddingHall(e)}>
             <img
               src={process.env.PUBLIC_URL + "/imgs/전화/call.png"}
               style={{ width: "10px", height: "10px", marginRight: "10px" }}

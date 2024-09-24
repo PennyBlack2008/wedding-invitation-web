@@ -89,7 +89,11 @@ function Gallery() {
               key={index}
               src={img.src}
               alt={`갤러리 이미지 ${index}`}
-              style={{ width: "100%", objectFit: "cover" }}
+              style={{
+                width: "100%",
+                objectFit: "cover",
+                borderRadius: "7px",
+              }}
               onClick={(e) => handleClickImage(e, index)}
             ></img>
           ))}
@@ -99,7 +103,11 @@ function Gallery() {
                 key={index}
                 src={img.src}
                 alt={`갤러리 이미지 ${index}`}
-                style={{ width: "100%", objectFit: "cover" }}
+                style={{
+                  width: "100%",
+                  objectFit: "cover",
+                  borderRadius: "7px",
+                }}
                 onClick={(e) => handleClickImage(e, index + 6)}
               ></img>
             ))}

@@ -24,7 +24,7 @@ const SwiperContainer = styled.div`
 function GallerySwiper() {
   const swiperRef = useRef(null);
   const { isOpen, imgIndex, closeGallerySwiper } = gallerySwiperStore();
-  const imgList = CSTM.갤러리사진리스트;
+  const imgList = CSTM.큰갤러리사진리스트;
 
   useEffect(() => {
     handleSlideTo(imgIndex);
@@ -64,7 +64,7 @@ function GallerySwiper() {
                 key={index}
                 style={{
                   height: "auto",
-                  backgroundColor: "rgba(0, 0, 0, 0.7)",
+                  backgroundColor: "rgba(0, 0, 0, 0.0)",
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
